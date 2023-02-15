@@ -1,7 +1,8 @@
 /*
- * [다형성]===========
+ * [다형성]================================
+ * 1.부모의 참조변수로 자식 객체를 가리킴
  * 
- * 
+ * ========================================
  * 
  * */
 
@@ -30,7 +31,12 @@ public class PolymorhismEx01 {
 
 	public static void main(String[] args) {
 		
-		Parent p = new Parent();	
+		Parent p = new Parent();
+		
+		Parent p2 = new Son();
+		
+		Parent p3 = new Daughter();
+		p3.
 		
 		Son s = new Son();
 		s.spend(100000);

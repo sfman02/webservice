@@ -1,0 +1,20 @@
+public class Stack<E> extends Vector<E> {
+
+    public Stack() {
+    }
+
+    public E push(E item) {
+        addElement(item);
+
+        return item;
+    }
+
+    public synchronized E pop() {
+    }
+
+    public synchronized E peek() {
+    }
+
+    public synchronized int search(Object o) {
+    }
+}

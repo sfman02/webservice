@@ -1,0 +1,14 @@
+import java.util.Stack;
+
+public class FinalEx01 {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.println(stack.get(1));            // 해당 인덱스 원소 찾기
+        System.out.println(stack.set(1, 1));         // 해당 인덱스에 원소 넣기
+        System.out.println(stack.remove(1));         // 해당 인덱스 원소를 삭제
+    }
+}

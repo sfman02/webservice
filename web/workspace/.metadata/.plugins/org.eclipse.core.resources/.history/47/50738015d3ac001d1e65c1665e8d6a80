@@ -1,0 +1,71 @@
+package access;
+class ArrayStack {
+	// [field] ===============================
+	int[] arr;
+	int top = -1;
+	final int SIZE = arr.length - 1;
+	
+	// 생성자 추가하여 현재 Error 해결 =======
+	
+	
+	
+	// [method] ==============================
+	void setArr(int length) {
+		this.arr = new int[length];
+	}
+	
+	void push(int element) {
+		// [첫 번째 방법] =================================================
+//		if(top < SIZE) {
+//			//top = top + 1;
+//			arr[++top] = element;
+//		}else {
+//			System.out.println("스택이 꽉 찼습니다! 용량 초과!");
+//		}	
+		
+		// [첫 번째 방법] =================================================
+		if(top < arr.length - 1) {
+			//top = top + 1;
+			arr[++top] = element;
+			return;
+		}
+		
+		System.out.println("스택이 꽉 찼습니다! 용량 초과!");
+	}
+
+	int pop() {
+		if(top > -1)
+			return arr[top--];
+		else
+			System.out.println("스택이 비었습니다.");
+			return top;
+	}	
+	
+	int peek() {
+		return arr[top];
+	}	
+}
+
+public class Quiz03 {
+	public static void main(String[] args) {
+		ArrayStack stack = new ArrayStack();
+		//stack.setArr(5);
+		
+		stack.push(20);
+		stack.push(15);
+		stack.push(10);
+		stack.push(55);
+		stack.push(8);
+		stack.push(5);
+		
+		System.out.println("\ntop에 있는 아이템 출력 : " + stack.peek());
+		
+		System.out.println("pop 실행 : " + stack.pop());
+		System.out.println("pop 실행 : " + stack.pop());
+		System.out.println("pop 실행 : " + stack.pop());
+		System.out.println("pop 실행 : " + stack.pop());
+		System.out.println("pop 실행 : " + stack.pop());
+		System.out.println("pop 실행 : " + stack.pop());	
+	}
+
+}

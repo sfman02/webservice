@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀렉터 문제</title>
+  <style>
+    #header h1 em {
+      background-color: orange;
+    }
+    #header p+p {
+      border: 3px solid black;
+    }
+    #container #lead {
+      background-color: lime;
+    }
+    #container div.lead {
+      color: red;  
+    }
+    #container ol~p {
+      background-color: lightblue;
+    }
+    #container+p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>css <em>selector</em></h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iste consequatur odit expedita fugit vero cum omnis, minus totam perspiciatis, nulla saepe repellendus iure dolorem amet provident qui. Placeat, neque!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iste consequatur odit expedita fugit vero cum omnis, minus totam perspiciatis, nulla saepe repellendus iure dolorem amet provident qui. Placeat, neque!</p>
+    </div>
+    <div id="container">
+      <p id="lead">Lorem ipsum dolor sit amet.</p>
+      <p class="lead">Lorem ipsum dolor sit amet.</p>
+      <div class="lead">Lorem ipsum dolor sit amet.</div>
+      <ol class="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ol>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est cumque id molestiae impedit amet ipsum sunt tenetur, laudantium expedita placeat sed, provident fuga deleniti consequuntur ratione qui sint voluptatem facere!</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>container 형제 p 태그</p>
+  </div>  
+</body>
+</html>

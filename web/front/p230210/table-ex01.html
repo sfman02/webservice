@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    .tbl {
+      /* border: 1px solid #000; */
+
+      /* 
+      [cell 사이 여백]
+      - separate | collapse
+      */
+      border-collapse: collapse;
+
+      width: 800px;
+
+      /* 
+      셀 내 텍스트 길이에 상관없이
+      너비 일정하게 유지
+      */
+      table-layout: fixed;
+
+
+    }
+
+    .tbl caption {
+      /* 캡션 위치 */
+      /* top | bottom */
+      caption-side: top;
+
+      /* 캡션 숨기기 */
+      /* 1. display */
+      display: none;
+
+      /* 2. text-indent */
+      /* text-indent: -100em; */
+    }
+
+    .tbl td,
+    .tbl th {
+      border: 1px solid #000;
+
+      /* 가로 가운데 정렬 */
+      text-align: center;
+    }
+
+    .tbl th.col-first {
+      /* width: 250px; */
+    }
+
+    .tbl tbody tr:nth-child(2n+1) {
+      background-color: #ff0;
+    } 
+    /* .tbl tbody tr:nth-of-type(2n+1) {
+      background-color: #ff0;
+    }  */
+  </style>
+</head>
+
+<body>
+  <table class="tbl">
+    <caption>table caption</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="col-first">table header cell-1</th>
+        <th scope="col">table header cell-2</th>
+        <th scope="col">table header cell-3</th>
+        <th scope="col">table header cell-4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>table data cell-1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, officia.</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>

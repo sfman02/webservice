@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀렉터 연습 1</title>
+  <style>
+    /* 
+    [선택자] selector =============
+    - tag   (태그)   : 태그명
+    - id    (아이디) : #아이디값
+    - class (클래스) : .클래스값
+    ================================
+    */
+    span {
+      color: #f00;
+    }
+    span {
+      color: #0f0;
+    }
+    div>span {
+      color: #999;
+    }
+    #ex-css span {
+      color: #00f;
+    }
+    .second-tag span {
+      background-color: #ff0;
+    }
+    h1,h2 {
+      color: #f0f;
+    }
+    /* h2 {
+      color: #f0f;
+    } */
+  </style>
+</head>
+<body>
+  <div id="ex-css">
+    <h1>첫번째 h1</h1>
+    <div class="first-tag">
+      <span>span tag1</span>
+      <p>
+        <span>span tag2</span>
+      </p>
+    </div>
+    <span>span tag3</span>
+  </div>
+  <!--  -->
+  <div class="second-tag">
+    <h1>두번째 h1</h1>
+    <h2>
+      <span>span tag4</span>
+    </h2>
+    <h2>Heading 2</h2>
+  </div>
+  <!--  -->
+  <span>span tag5</span>
+  <!--  -->
+</body>
+</html>

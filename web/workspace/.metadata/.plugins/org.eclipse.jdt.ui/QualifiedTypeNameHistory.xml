@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="javax.management.monitor.CounterMonitor"/>
+    <fullyQualifiedTypeName name="person"/>
+    <fullyQualifiedTypeName name="Fruit"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="baseball"/>
+    <fullyQualifiedTypeName name="Animal"/>
+    <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ArrayStack"/>
+</qualifiedTypeNameHistroy>

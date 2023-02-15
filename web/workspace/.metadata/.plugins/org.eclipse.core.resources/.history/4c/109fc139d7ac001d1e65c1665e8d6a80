@@ -1,0 +1,10 @@
+
+public class CircleArea {
+
+	public static void main(String[] args) {
+
+		CircleArea ca = new CircleArea();
+		
+	}
+
+}

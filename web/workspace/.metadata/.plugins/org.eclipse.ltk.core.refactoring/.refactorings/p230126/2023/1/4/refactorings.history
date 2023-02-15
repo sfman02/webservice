@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NestedLoopEx01.java&apos; to &apos;NestedLoopEx01.java&apos;&#x0D;&#x0A;- Original project: &apos;p230126&apos;&#x0D;&#x0A;- Destination element: &apos;NestedLoopEx01.java&apos;&#x0D;&#x0A;- Original element: &apos;NestedLoopEx01.java&apos;" description="Copy compilation unit" destination="/src&lt;{NestedLoopEx01.java" element1="/src&lt;{NestedLoopEx01.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1674698652062" units="1" version="1.0"/>
+</session>

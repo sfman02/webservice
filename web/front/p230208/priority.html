@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자 우선순위</title>
+  <style>
+    /* 선택자 우선순위 */
+    /* element < class < id < element+class+id < inline < !important */
+    div.sample#sample {background-color: #0ff;}
+    #sample {background-color: #f00;}
+    .sample {background-color: #eee;}
+    div {background-color: #ff0 !important;}
+    div {background-color: #0f0;}
+  </style>
+</head>
+<body>
+  <h1>css selector</h1>
+  <div class="sample" id="sample" style="background-color: #f0f;">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ab quam consectetur illo et dolorem deleniti, tenetur voluptates tempora, quas quaerat debitis! Eos blanditiis assumenda temporibus aut voluptates in veniam.
+  </div>  
+</body>
+</html>

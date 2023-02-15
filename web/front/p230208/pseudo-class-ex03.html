@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-class</title>
+  <style>
+    /* --------- css2 ---------- */
+    /* 부모가 누구든 첫 번째 li */
+    /* li:first-child {
+      background-color: #ff0;
+    } */
+
+    /* --------- css3 ---------- */
+    /* 부모가 누구든 첫 번째 li */
+    /* li:first-of-type {
+      background-color: #ff0;
+    } */
+    /* 부모가 ul인 li 중 첫 번째 li */
+    ul>li:first-of-type {
+      background-color: #ff0;
+    }
+
+    /* cf) 부모가 ul인 li 중 마지막 li */
+    ul>li:last-of-type {
+      background-color: skyblue;
+    }
+
+    /* 몇 번째 자식 */
+    /* --------- css2 ---------- */
+    li:nth-child(2) {
+      background-color: aqua;
+    }
+    /* --------- css3 ---------- */
+    ul>li:nth-of-type(2) {
+      color: #f00;
+    }
+    ul>li:nth-of-type(2n+1) {
+      font-style: italic;
+      color: blue;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <li>추가된 리스트(item) 1</li>
+      <li>추가된 리스트(item) 2</li>
+    </ol>
+    <li>첫번째</li>
+    <li>두번째</li>
+    <li>세번째</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat dignissimos sunt ut magni dolores consequuntur neque dolorem nobis deleniti voluptas, expedita mollitia facere magnam necessitatibus atque ullam earum voluptates.</p>
+</body>
+</html>

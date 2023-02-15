@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 300px;
+  /* background-color: #ff0; */
+}
+
+#navigation {
+  background-color: #f00;
+  height: 50px;
+}
+
+#main {
+  height: 150px;
+  background-color: #ff0;
+}
+
+#main::after {
+  /*방법1*/
+  /* overflow: hidden; */
+  /*방법2*/
+  content:'';
+  display: block;
+  clear:both;
+}
+
+#main #left-menu {
+  float: left;
+  width: 50px;
+  height: 150px;
+  background-color: #0ff;
+}
+
+#main #content {
+  float: right;
+  width: 250px;
+  height: 150px;
+  background-color: #00f;
+
+}
+
+#main #content #contain {
+  background-color: #f0f;
+  height: 100px;
+}
+
+#footer {
+  background-color: #eee;
+  height: 50px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    .box {
+      border: 5px double #00f;
+      padding: 20px;
+      background-color: #ff0;
+
+      background-image: url(img/dog.jpg);
+      width: 1800px;
+      height: 1000px;
+
+      /* repeat | no-repeat | repeat-x | repeat-y*/
+      background-repeat: no-repeat;
+
+      /* 
+      [위치 지정]
+      * 가로 x 세로 
+      - left/center/right x top/center/bottom
+      - ex) background-position: center center;
+
+      * 수평(왼/오) x 수직(위/아래)
+      - left top        0%    0%
+      - center center   50%   50%
+      - right  bottom   100%  100%
+      - ex) background-position: 100% 100%;
+
+      * 수평(왼/오) x 수직(위/아래)
+      - left top        0     0
+      - ex) background-position: 100px 100px;
+      */
+      background-position: 100px 100px;
+
+      /* 
+      [스크롤과 상관없이 같은 위치 그대로 존재]
+      background-attachment: fixed;
+
+      [스크롤하면 화면에서 사라짐]
+      background-attachment: scroll;
+      */
+      background-attachment: scroll;
+
+      /* shorthand */
+      background: #0ff url(img/dog.jpg) scroll no-repeat 50% 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto quidem odit? Quisquam mollitia est voluptates ullam debitis sit, velit voluptate autem in ex laboriosam reiciendis, neque minus modi. Eos.</div>
+  
+</body>
+</html>
